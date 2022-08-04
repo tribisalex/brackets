@@ -1,7 +1,7 @@
 module.exports = function check(str, bracketsConfig) {
-  const brackets = str.split('');
-  const stack = [];
   let bracketsObj = {};
+  const stack = [];
+  const brackets = str.split('');  
 
   for (let i = 0; i < bracketsConfig.length; i++) {
     const key = bracketsConfig[i][1];
